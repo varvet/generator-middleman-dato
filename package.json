@@ -2,6 +2,7 @@
   "name": "generator-middleman-dato",
   "version": "0.1.0",
   "description": "A Yeoman generator for Varvet Middleman/DatoCMS boilerplate",
+  "main": "generators/index.js",
   "author": {
     "name": "Erica Glimsholt",
     "email": "erica.glimsholt@universalavenue.com",
@@ -17,5 +18,8 @@
     "yeoman-generator": "^1.1.1",
     "lodash": "^4.16.4"
   },
-  "repository": "varvet/generator-middleman-dato"
+  "repository": "varvet/generator-middleman-dato",
+  "bin": {
+    "middleman-dato": "./index.js"
+  }
 }

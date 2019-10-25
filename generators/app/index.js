@@ -2,6 +2,7 @@
 const Generator = require('yeoman-generator');
 let glob = require("glob");
 let _ = require('lodash');
+let mkdirp = require('mkdirp');
 
 module.exports = class extends Generator {
   async prompting() {
@@ -12,14 +13,12 @@ module.exports = class extends Generator {
       {
         type: 'input',
         name: 'appname',
-        message: 'Your project name',
-        default: this.appname // Default to current folder name
+        message: 'Your project name'
       },
       {
         type: 'input',
         name: 'datoToken',
-        message: 'Your DatoCMS API token',
-        default: 'f1c84cb92b997dbea1f61549f410ad'
+        message: 'Your DatoCMS API token'
       }
     ];
 
@@ -40,7 +39,8 @@ module.exports = class extends Generator {
     'README.md': 'README.md',
     'source/index.html.erb': 'source/index.html.erb',
     'source/layouts/layout.erb': 'source/layouts/layout.erb',
-    'lib/block_resolver.rb': 'lib/block_resolver.rb'
+    'lib/block_resolver.rb': 'lib/block_resolver.rb',
+    '.gitkeep': '.gitkeep'
     }
 
     let templateFilesWithRender = {
@@ -92,6 +92,10 @@ module.exports = class extends Generator {
         }
       );
     });
+
+    // Make empty folders
+    mkdirp.sync('source/stylesheets/modules');
+    mkdirp.sync('source/modules');
   }
 
   async install() {
