@@ -1,0 +1,13 @@
+// Buttons and links
+a,
+a:active,
+a:focus,
+a:visited {
+  color: $link--primary;
+  text-decoration: none;
+  transition: color 200ms ease;
+
+  &:hover {
+    color: $link__hover--primary;
+  }
+}

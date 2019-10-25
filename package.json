@@ -1,14 +1,21 @@
 {
   "name": "generator-middleman-dato",
   "version": "0.1.0",
-  "description": "",
+  "description": "A Yeoman generator for Varvet Middleman/DatoCMS boilerplate",
+  "author": {
+    "name": "Erica Glimsholt",
+    "email": "erica.glimsholt@universalavenue.com",
+    "url": "http://varvet.com"
+  },
   "files": [
-    "app"
+    "generators"
   ],
   "keywords": [
     "yeoman-generator"
   ],
   "dependencies": {
-    "yeoman-generator": "^1.1.1"
-  }
+    "yeoman-generator": "^1.1.1",
+    "lodash": "^4.16.4"
+  },
+  "repository": "varvet/generator-middleman-dato"
 }

@@ -1,0 +1,15 @@
+// General
+$color--primary: #000;
+$color--secondary: #fff;
+
+// Backgrounds
+$background--primary: #333;
+$background--secondary: #ccc;
+
+// Typography
+$title--primary: $color--secondary;
+$text--primary: $color--secondary;
+
+// Links
+$link--primary: $text--primary;
+$link__hover--primary: $color--primary;

@@ -1,0 +1,3 @@
+---
+title: Example blog post
+---

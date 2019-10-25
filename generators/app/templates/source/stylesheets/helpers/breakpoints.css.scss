@@ -1,0 +1,33 @@
+// Mixin to manage responsive breakpoints
+// Switch max-width for min-width if you perfer working "the other way around"
+$breakpoints: (
+  "x-small": (max-width:  480px),
+  "small": (max-width:  767px),
+  "medium": (max-width:  940px),
+  "large": (max-width: 1120px),
+  "x-large": (max-width: 1440px)
+) !default;
+
+
+@mixin breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+// Usage:
+//
+//.selector {
+//  color: red;
+//
+//  @include breakpoint("small") {
+//    color: blue;
+//  }
+//}

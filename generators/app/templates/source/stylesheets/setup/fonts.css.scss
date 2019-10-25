@@ -1,0 +1,8 @@
+// Custom web font example: Place fonts in fonts folder and import using @font-face.
+@font-face {
+  font-family: "LetteraText-Light";
+  src:url("/fonts/lineto-letteratext-light.eot");
+  src:url("/fonts/lineto-letteratext-light.eot?#iefix") format("embedded-opentype"), url("/fonts/lineto-letteratext-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

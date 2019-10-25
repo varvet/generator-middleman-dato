@@ -1,0 +1,16 @@
+// Import styling
+@import "setup/base.css.scss";
+@import "setup/fonts.css.scss";
+@import "setup/normalize.css.scss";
+
+@import "helpers/colors.css.scss";
+@import "helpers/grid.css.scss";
+@import "helpers/typography.css.scss";
+@import "helpers/buttons.css.scss";
+@import "helpers/breakpoints.css.scss";
+
+@import "blocks/footer.css.scss";
+@import "blocks/header.css.scss";
+
+// Presentational styling for this project, not applicable elsewhere
+@import "boilerplate-styles.css.scss";
