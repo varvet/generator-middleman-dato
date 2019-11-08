@@ -96,6 +96,7 @@ module.exports = class extends Generator {
     // Make empty folders
     mkdirp.sync('source/stylesheets/modules');
     mkdirp.sync('source/modules');
+    mkdirp.sync('source/templates');
   }
 
   async install() {
