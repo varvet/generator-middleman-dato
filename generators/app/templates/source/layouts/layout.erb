@@ -8,9 +8,9 @@
     <title><%= current_page.data.title || "Middleman" %></title>
     <%= stylesheet_link_tag "site" %>
     <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/c5da358e-e461-422e-ab63-5a8d9dc5633f.css"/>
-    <%= javascript_include_tag "site" %>
   </head>
   <body>
     <%= yield %>
+    <%= javascript_include_tag "site" %>
   </body>
 </html>
