@@ -1,0 +1,18 @@
+.show-for-desktop-only {
+    @media screen and (max-width: 39.9375em) { display: none; }
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) { display: none; }
+  }
+  
+  .show-for-tablet-only {
+    @media screen and (max-width: 39.9375em) { display: none; }
+    @media screen and (min-width: 64em) { display: none; }
+  }
+  
+  .show-for-mobile-only {
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) { display: none; }
+    @media screen and (min-width: 64em) { display: none; }
+  }
+  
+  .hide-for-mobile-only {
+    @media screen and (max-width: 39.9375em) { display: none !important; }
+  }
