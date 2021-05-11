@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "yeoman-generator": "^1.1.1",
-    "lodash": "^4.16.4"
+    "lodash": "^4.17.21"
   },
   "repository": "varvet/generator-middleman-dato",
   "bin": {
